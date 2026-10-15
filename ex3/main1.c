@@ -2,25 +2,22 @@
 using namespace std;
 
 void print_sp(int i, int n) {
-    for (int j = 0; j < n - i; j++) {
+    for (int sp = 0; sp < n - i; sp++) {
         cout << " ";
     }
 }
 
 void print_num(int n) {
-    for (int j = 0; j < n; j++) {
-        cout << n;
-        if (j < n - 1) {
-            cout << " ";
-        }
+    for (int i = 0; i < n; i++) {
+        printf("%d",n);
     }
-    cout << endl;
+     printf("\n");
 }
 
 int main() {
     int rows = 6;
 
-    for (int i = 1; i <= rows; i++) {
+    for (int i = 0; i <= rows; i++) {
         print_sp(i, rows);
         print_num(i);
     }
